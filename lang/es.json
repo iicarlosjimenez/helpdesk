@@ -1,0 +1,23 @@
+{
+    "Ticket": "Ticket",
+    "Tickets": "Tickets",
+    "Name": "Nombre",
+    "Title": "Título",
+    "Work Unit": "Unidad de trabajo",
+    "Problem Category": "Categoría del problema",
+    "Description": "Descripción",
+    "Priority": "Prioridad",
+    "Created at": "Creado en",
+    "Updated at": "Actualizado en",
+    "Approved at": "Aprovado en",
+    "Solved at": "Resuelto en ",
+    "Status": "Estado",
+    "Ticket Status": "Estado del ticket",
+    "Responsible": "Responsable",
+    "Tickets Count": "Conteo de tickets",
+    "Ticket Statuses ": "Estados de tickets",
+    "Owner": "Propietario",
+    "Login": "Inicio de sesión",
+    "Why Use Helpdesk?": "Why Use Helpdesk?",
+    "Reasons": "Los centros de ayuda brindan soporte eficiente, centralizan la comunicación, optimizan los flujos de trabajo, ofrecen opciones de autoservicio, monitorean el rendimiento y mejoran la experiencia del cliente."
+}

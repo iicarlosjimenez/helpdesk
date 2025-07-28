@@ -103,7 +103,7 @@ return [
     'pages' => [
         'namespace' => 'App\\Filament\\Pages',
         'path' => app_path('Filament/Pages'),
-        'register' => [],
+        // 'register' => [],
     ],
 
     /*
@@ -119,7 +119,7 @@ return [
     'resources' => [
         'namespace' => 'App\\Filament\\Resources',
         'path' => app_path('Filament/Resources'),
-        'register' => [],
+        // 'register' => [],
     ],
 
     /*
@@ -135,10 +135,10 @@ return [
     'widgets' => [
         'namespace' => 'App\\Filament\\Widgets',
         'path' => app_path('Filament/Widgets'),
-        'register' => [
-            Widgets\AccountWidget::class,
-            \Awcodes\Overlook\Overlook::class,
-        ],
+        // 'register' => [
+        //     Widgets\AccountWidget::class,
+        //     \Awcodes\Overlook\Overlook::class,
+        // ],
     ],
 
     /*
@@ -312,7 +312,7 @@ return [
     'middleware' => [
         'auth' => [
             Authenticate::class,
-            'verified'
+            // 'verified'
         ],
         'base' => [
             EncryptCookies::class,

@@ -12,7 +12,6 @@ use Illuminate\Notifications\Notifiable;
 use Filament\Models\Contracts\FilamentUser;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\SoftDeletes;
-use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Althinect\FilamentSpatieRolesPermissions\Concerns\HasSuperAdmin;
@@ -24,7 +23,6 @@ use Althinect\FilamentSpatieRolesPermissions\Concerns\HasSuperAdmin;
  * @property null|int $unit_id
  * @property string $name
  * @property string $email
- * @property null|Carbon $email_verified_at
  * @property null|string $password
  * @property null|string $two_factor_secret
  * @property null|string $two_factor_recovery_codes
@@ -41,14 +39,13 @@ use Althinect\FilamentSpatieRolesPermissions\Concerns\HasSuperAdmin;
  * @property Collection|Comment[] $comments
  * @property Collection|Ticket[] $tickets
  */
-class User extends Authenticatable implements FilamentUser, MustVerifyEmail
+class User extends Authenticatable implements FilamentUser
 {
     use SoftDeletes, HasRoles, HasSuperAdmin, HasFactory, Notifiable;
     protected $table = 'users';
 
     protected $casts = [
         'unit_id' => 'int',
-        'email_verified_at' => 'datetime',
         'two_factor_confirmed_at' => 'datetime',
         'user_level_id' => 'int',
         'is_active' => 'bool',
@@ -64,7 +61,6 @@ class User extends Authenticatable implements FilamentUser, MustVerifyEmail
         'unit_id',
         'name',
         'email',
-        'email_verified_at',
         'password',
         'two_factor_secret',
         'two_factor_recovery_codes',

@@ -40,36 +40,9 @@
                     {{ __('Login') }}
                 </a>
             </div>
-            <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
-                <img src="{{ url('lamp.png') }}">
-            </div>
         </div>
     </section>
 
-
-    <section class="bg-gray-50 dark:bg-gray-900 dark:bg-gray-800">
-        <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 ">
-            <div class="max-w-screen-lg text-gray-500 sm:text-lg dark:text-gray-400">
-                <h2 class="mb-4 text-4xl font-bold text-gray-900 dark:text-white">{{ __('Why Use Helpdesk?') }}</h2>
-                <p class="mb-4 font-light">{{ __('Reasons') }}</p>
-            </div>
-        </div>
-    </section>
-
-
-    <footer class="p-4 bg-gray-50 sm:p-6 dark:bg-gray-800">
-        <div class="mx-auto max-w-screen-xl">
-            <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-            <div class="sm:flex sm:items-center sm:justify-between">
-                <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© {{ date('Y') }} <a
-                        href="https://ict.ummi.ac.id" class="hover:underline">{{ config('app.name') }}</a>. All Rights
-                    Reserved.
-                </span>
-                <div class="flex mt-4 sm:justify-center sm:mt-0">
-                </div>
-            </div>
-        </div>
-    </footer>
 
 </body>
 

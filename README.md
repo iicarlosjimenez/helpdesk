@@ -27,6 +27,7 @@ Feel free to explore this repository and start building a robust and responsive 
 <hr/>
 
 ## Requirements
+* NodeJS 20.11 or higher
 * PHP 8.1 or higher
 * Database (eg: MySQL, PostgreSQL, SQLite)
 * Web Server (eg: Apache, Nginx, IIS)
@@ -36,16 +37,23 @@ Feel free to explore this repository and start building a robust and responsive 
 
 ## Installation
 
+* Install [nodejs](https://nodejs.org/es/download)
 * Install [Composer](https://getcomposer.org/download)
-* Clone the repository: `git clone https://github.com/ruswan/laravel_helpdesk.git`
+* Clone the repository: `git clone https://github.com/iicarlosjimenez/helpdesk.git`
 * Install PHP dependencies: `composer install`
+* Install JS dependencies: `npm install`
 * Setup configuration: `cp .env.example .env`
 * Generate application key: `php artisan key:generate`
-* Create a database and update your configuration.
+* Create a database: `CREATE DATABASE if NOT EXISTS {database_name};`
+* Update your environment:
+   - DB_DATABASE={database_name}
+   - DB_USERNAME={username}
+   - DB_PASSWORD={password}
 * Run database migration: `php artisan migrate`
 * Run database seeder: `php artisan db:seed`
 * Create a symlink to the storage: `php artisan storage:link`
-* Run the dev server: `php artisan serve`
+* Run the dev server NodeJS: `npm run dev`
+* Run the dev server Laravel: `php artisan serve`
 
 <hr/>
 
